@@ -1,31 +1,13 @@
-﻿   @using Microsoft.AspNetCore.Authorization
+﻿@page "/auth"
 
-   @inject Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider AuthenticationStateProvider
+@using Microsoft.AspNetCore.Authorization
 
-   @page "/auth"
+@attribute [Authorize]
 
-   @attribute [Authorize]
+<PageTitle>Auth</PageTitle>
 
-   <PageTitle>Auth</PageTitle>
+<h1>You are authenticated</h1>
 
-   <h1>You are authenticated</h1>
-
-   @code {
-    private AuthenticationState _authenticationState;
-
-    public Auth(AuthenticationState authenticationState)
-    {
-        _authenticationState = authenticationState;
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-           _authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-       }
-   }
-
-   @if (_authenticationState.User.Identity?.Name != null)
-   {
-       <p>Hello @_authenticationState.User.Identity.Name!</p>
-   }
-   
+<AuthorizeView>
+    Hello @context.User.Identity?.Name!
+</AuthorizeView>

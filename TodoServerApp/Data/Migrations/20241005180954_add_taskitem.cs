@@ -34,10 +34,10 @@ namespace TodoServerApp.Migrations
                 columns: new[] { "Id", "CreatedDate", "Description", "FinishDate", "Title" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 9, 23, 20, 59, 58, 556, DateTimeKind.Local).AddTicks(5412), "Описание задачи 1", null, "Задача 1" },
-                    { 2, new DateTime(2024, 9, 23, 20, 59, 58, 556, DateTimeKind.Local).AddTicks(5436), "Описание задачи 2", null, "Задача 2" },
-                    { 3, new DateTime(2024, 9, 23, 20, 59, 58, 556, DateTimeKind.Local).AddTicks(5440), "Описание задачи 3", null, "Задача 3" },
-                    { 4, new DateTime(2024, 9, 23, 20, 59, 58, 556, DateTimeKind.Local).AddTicks(5443), "Описание задачи 4", null, "Задача 4" }
+                    { 1, new DateTime(2024, 10, 5, 23, 9, 52, 520, DateTimeKind.Local).AddTicks(5748), "Описание задачи 1", null, "Задача 1" },
+                    { 2, new DateTime(2024, 10, 5, 23, 9, 52, 520, DateTimeKind.Local).AddTicks(5765), "Описание задачи 2", null, "Задача 2" },
+                    { 3, new DateTime(2024, 10, 5, 23, 9, 52, 520, DateTimeKind.Local).AddTicks(5766), "Описание задачи 3", null, "Задача 3" },
+                    { 4, new DateTime(2024, 10, 5, 23, 9, 52, 520, DateTimeKind.Local).AddTicks(5767), "Описание задачи 4", null, "Задача 4" }
                 });
         }
 
